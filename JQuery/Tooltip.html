@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Tool Tip</title>
+        <link rel="stylesheet" href="CSS/Style_Tooltip.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    </head>
+    <body>
+        <center>
+        <div id="mydiv">
+        <h1>Tooltip animation in JQ UI</h1><br>
+       <img id="Nish" src="photo.jpg" width="200px" title="Nishanth">
+        </div>
+        </center>
+    </body>
+        <script src="jquery.js" type="text/javascript"></script>
+        <script src="jqueryui/jquery-ui.js" type="text/javascript"></script>
+        <script>
+           $("img").tooltip({
+               track:true,content:"Python Lover",show:{
+                   effect:"bounce",duration:5000
+               },hide:{
+                effect:"explode",duration:2000
+            }
+           }); 
+            
+        </script>
+</html>
+    

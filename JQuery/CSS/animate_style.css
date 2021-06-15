@@ -1,0 +1,9 @@
+.Mycube{
+    background-color: chartreuse;
+    border:10px solid blue;
+    width: 50px;
+    margin: 10px;
+    height: 50px;
+    opacity: 0.4;
+    Position: absolute;
+}

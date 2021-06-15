@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Tool Tip</title>
+        <link rel="stylesheet" href="CSS/Style_Tooltip.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    </head>
+    <body>
+        <center>
+        <h1>Accordion JQUERY UI</h1><br>
+        <div id="mydiv">
+            <h2>Nishanth</h2>
+            <p>He is good Boy and he is a Python Lover </p>
+            <h2>Nishmitha</h2>
+            <p>She is good Girl and she is a basically Java Lover, But currently SAP lover </p>
+            <h2>Shrinivas</h2>
+            <p>He is a Good Father and He is a Jothe Jotheyalli Serial Lover </p>
+        </div>
+        </center>
+    </body>
+        <script src="jquery.js" type="text/javascript"></script>
+        <script src="jqueryui/jquery-ui.js" type="text/javascript"></script>
+        <script>
+          //$("#mydiv").accordion();
+          $("#mydiv").accordion({
+              collapsible:true,event:"click",animate:300,active:1,hieghtStyle:true,icons:{header:"ui-icon-plus",activeHeader:"ui-icon-minus"}
+          });
+        </script>
+</html>
+    

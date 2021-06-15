@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Date Selector</title>
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    </head>
+    <body>
+        <center>
+        <div id="mydiv">
+        <h1>Datepicker in jquery UI</h1><br>
+        <input id="datepick" placeholder="Select Date" type="text"> 
+        </div>
+        </center>
+    </body>
+        <script src="jquery.js" type="text/javascript"></script>
+        <script src="jqueryui/jquery-ui.js" type="text/javascript"></script>
+        <script>
+            // $("#mydiv").datepicker();
+            //$("#datepick").datepicker();
+            $("#datepick").datepicker({
+                numberOfMonths:1,changeYear:true,changeMonth:true,showWeek:true,
+                weekHeader:"Weeks no",showOtherMonths:true,minDate:new Date(2017,0,1),maxDate:new Date(2020,12,0)
+                });
+        </script>
+</html>
+    

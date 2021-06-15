@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>My events JQ</title>
+        <center>
+            <body>
+              <h1>FadeIn and FadeOut Events in jquery</h1>  
+             <h2 id="heading1">Nishanth</h2>
+             <button id="btn1">Submit</button> 
+            </body>
+        </center>
+    </head>
+         <script src="jquery.js"></script>
+         <script>
+         $(document).ready(function()
+         {
+         $("#btn1").dblclick(fn1)
+         function fn1()
+         {
+            $("#heading1").fadeOut();
+         }
+         function fn2()
+         {
+            $("#heading1").fadeIn();
+         }
+        })
+         </script>
+</html>

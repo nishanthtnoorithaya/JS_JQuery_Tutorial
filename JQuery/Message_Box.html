@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Message Box</title>
+        <link rel="stylesheet" href="CSS/Style_Tooltip.css">
+        <link rel="stylesheet" href="jqueryuicustom/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryuicustom/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryuicustom/jquery-ui.theme.css">
+    </head>
+    <body>
+        <center>
+        <h1>MessageBox TO JQ</h1><br>
+        <div id="msgbox" title="Message Box" class="mydivs">
+            <h2>Nishmitha</h2>    
+        </div>
+        </center>
+    </body>
+        <script src="jquery.js" type="text/javascript"></script>
+        <script src="jqueryuicustom/jquery-ui.js" type="text/javascript"></script>
+        <script>
+         // $("#msgbox").dialog();
+         $("#msgbox").dialog({
+            title:"Name",draggable:false,hieght:300,width:300,model:true,
+            buttons:[{
+                text:"close",icon:"ui-icon-heart",click:function(){
+                    $(this).dialog("close")
+                }
+            },
+            {
+                    text:"Ok",icon:"ui-icon-heart",click:function(){
+                        $(this).dialog("close")
+                    }
+            }]
+         });
+        </script>
+</html>
+    

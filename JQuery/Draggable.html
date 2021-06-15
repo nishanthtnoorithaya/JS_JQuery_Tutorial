@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Draggable</title>
+        <link rel="stylesheet" href="CSS/draggable.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    </head>
+    <body>
+        <center>
+        <h1>Dragging</h1><br>
+        <div id="firstdiv">
+            <div class="mydiv">
+                <h3>CUBE 1</h3>
+            </div>
+            <div class="mydiv">
+                <h3>CUBE 2</h3>
+            </div>
+            <br>
+            <button id="btn">Change x and y axis</button>
+        </div>
+        </center>
+    </body>
+        <script src="jquery.js" type="text/javascript"></script>
+        <script src="jqueryui/jquery-ui.js" type="text/javascript"></script>
+        <script>
+        //$(".mydiv").draggable();
+        $(".mydiv").draggable({
+            axis:"y",containment:"parent",cursor:"grabbing",opacity:0.3,//grid:[300,300],snap:true,snapTolerance:100
+        });
+        $("#btn").click(function(){
+            $(".mydiv").draggable("option","axis","x")
+            alert($(".mydiv").draggable("option","axis"))
+        })
+        </script>
+</html>
+    

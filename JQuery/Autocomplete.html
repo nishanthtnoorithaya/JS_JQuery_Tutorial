@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>AutoComplete</title>
+        <link rel="stylesheet" href="CSS/AutoComplete.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    </head>
+    <body>
+        <center>
+        <h1>AutoComplete in Jquery</h1><br>
+        <label id="mylabel"><b>Enter the city</b></label>
+        <input id="mycity" type="text" placeholder="Cites" name="">
+        </center>
+    </body>
+        <script src="jquery.js" type="text/javascript"></script>
+        <script src="jqueryui/jquery-ui.js" type="text/javascript"></script>
+        <script>
+         var mycities=["Mangalore","Belthangady","Moodabidre","karkala"];
+         $("#mycity").autocomplete({source:mycities},{autoFocus:true,delay:300,minLength:0}
+         );
+        </script>
+</html>
+    

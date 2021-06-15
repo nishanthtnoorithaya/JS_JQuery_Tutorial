@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>DOM Manipulation in JQuery</title>
+        <center>
+            <body>
+                <p id="p1" class="Para" value="hello">Namste Im the boss</p>
+                <button id="btn1">Click Me</button>
+            </body>
+        </center>
+        <script src="jquery.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(fn1);
+                function fn1(){
+                    //$("p").html("<h1>I am the boss of Python<h1>")
+                    //alert($("#p1").css("border"));
+                    //alert($("#p1").attr("value"));
+                }
+            })
+        </script>
+    </head>
+</html>

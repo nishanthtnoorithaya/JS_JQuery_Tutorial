@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>JQ Selector</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="jquery.js"></script>
+        <script>
+        function fun()
+        {
+            $("li:odd,#heading2,#div2").fadeToggle();
+        }
+        </script>
+        <center>
+        <body>
+        <h1>JQ Selectors</h1>
+        <div id="div1" class="Myclass">
+         <h2 id="heading1">Nishanth</h2>
+         <h2 id="heading2">Nishmitha</h2>
+        </div>
+        <div id="div2" class="Myclass">
+            <ul>
+              <li>Python</li>
+              <li>Java</li> 
+            </ul>     
+           </div>
+         <button id="btn1" type="button" onclick="fun()">Submit</button>
+        </body>
+        </center>
+    </head>
