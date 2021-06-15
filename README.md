@@ -1,1 +1,1 @@
-# JS_JQuery_Tutorial
+# JS_JQuery_Tutorial for beginners.
