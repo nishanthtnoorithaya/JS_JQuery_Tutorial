@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Verification</title>
+        <script type="text/javascript">
+        function verify()
+        {
+            var x=document.getElementById("text1");
+            var regx=/^[6-9]\d{9}$/
+            if (regx.test(x.value))
+            {
+                alert("Passed")
+                return true
+            }
+            else
+            {
+                alert("Not passed")
+                return false
+            }
+        }
+        </script>
+        <body>
+             <center>
+            <h1>Mobile Number Validation</h1>
+            <form onsubmit="return verify()"></form>
+             <input id="text1" type="text" placeholder="Mobile Number"/>
+             <br><br>
+                <button id="btn1" onclick="verify()" type="submit">Submit</button>
+             </center>
+             </form>
+        </body>
+    </head>
+</html>

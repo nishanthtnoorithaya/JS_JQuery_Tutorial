@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <body>
+            <center>
+            <h1>Start Stop Timer</h1>
+            <script type="text/javascript">
+            var ID=0;
+            var seconds=0;
+            var Reset=0;
+             function start()
+             {
+                ID=setInterval(printmsg,20)
+             }
+             function printmsg()
+             {
+                 document.getElementById("text1").innerHTML=seconds+"Seconds";
+                 seconds++;
+             }
+             function stop()
+             {
+                 clearInterval(ID)
+             }
+             function reset()
+             {
+                 document.getElementById("text1").innerHTML=0 + "seconds";
+
+             }
+            </script>
+            <button id="strt" onclick="start()">Start</button>
+            <br>
+            <h1 id="text1">Timer</h1>
+            <br>
+            <button id="stop" onclick="stop()">Stop</button>
+            <br><br>
+            <button id="reset" onclick="reset()">Reset</button>
+            </center>
+        </body>
+    </head>
+</html>

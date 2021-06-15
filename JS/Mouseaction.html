@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Mouse Action</title>
+    </head>
+    <center>
+        <h1>onmouseover and onmouseout events</h1>
+        <body>
+            <script type="text/javascript">
+            function over(){
+                document.getElementById("i1").src="Bangalore.jpg";
+
+            }
+            function out(){
+                document.getElementById("i1").src="Manipal.jpg";
+            }
+            </script>
+            <img id="i1" onmouseover="over()" onmouseout="out()" src="Bangalore.jpg" width="300"/>
+        </body>
+    </center>
+</html>

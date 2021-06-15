@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Changing innerHTML</title>
+    </head>
+    <body>
+        <center>
+        <button onclick="buttonclick()">Click Me</button>
+        <h2 id="text1">Welcome to JS</h2>
+        <script type="text/javascript"> 
+        function buttonclick()
+        {
+        alert("Button clicked")
+        var x=document.getElementById("text1").innerHTML="<center><h2>Namaste Javascript</h2></center>";
+        document.write(x)
+        }    
+        </script>
+        </center>
+    </body>
+</html>
